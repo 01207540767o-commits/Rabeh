@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة التحكم — رَابِـح</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <style> body { font-family: 'Tajawal', sans-serif; } </style>
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen">
+    <!-- Navbar -->
+    <nav class="border-b border-slate-800 bg-slate-900/90 sticky top-0 z-50 p-4">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <span class="text-2xl font-extrabold text-white">رَابِـح <span class="text-emerald-500">Rabeh</span></span>
+            </div>
+            <div class="flex items-center gap-6 text-sm font-medium">
+                <a href="dashboard.html" class="text-emerald-400">الرئيسية</a>
+                <a href="orders.html" class="hover:text-emerald-400">الطلبات</a>
+                <a href="products.html" class="hover:text-emerald-400">المنتجات</a>
+                <a href="analytics.html" class="hover:text-emerald-400">تحليل التسريب</a>
+                <button onclick="logout()" class="text-red-400 hover:text-red-300">خروج</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto p-6">
+        <div class="flex items-center justify-between mb-8">
+            <h1 class="text-2xl font-extrabold text-white">ملخص الأرباح والأداء المالية</h1>
+            <a href="activate.html" class="px-4 py-2 bg-amber-500/10 border border-amber-500/30 text-amber-400 rounded-xl text-xs font-bold">تفعيل كود جديد</a>
+        </div>
+
+        <!-- الكروت الإحصائية -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+            <div class="bg-slate-800/60 p-6 rounded-2xl border border-slate-700">
+                <p class="text-xs text-slate-400 font-medium">إجمالي المبيعات</p>
+                <p id="total-sales" class="text-3xl font-black text-white mt-2">0 <span class="text-xs text-slate-400">ر.س</span></p>
+            </div>
+            <div class="bg-slate-800/60 p-6 rounded-2xl border border-slate-700">
+                <p class="text-xs text-slate-400 font-medium">إجمالي التكاليف والإعلانات</p>
+                <p id="total-costs" class="text-3xl font-black text-amber-400 mt-2">0 <span class="text-xs text-slate-400">ر.س</span></p>
+            </div>
+            <div class="bg-slate-800/60 p-6 rounded-2xl border border-slate-700">
+                <p class="text-xs text-slate-400 font-medium">صافي الربح الحقيقي</p>
+                <p id="net-profit" class="text-3xl font-black text-emerald-400 mt-2">0 <span class="text-xs text-slate-400">ر.س</span></p>
+            </div>
+            <div class="bg-slate-800/60 p-6 rounded-2xl border border-slate-700">
+                <p class="text-xs text-slate-400 font-medium">نسبة المرتجعات</p>
+                <p id="return-rate" class="text-3xl font-black text-red-400 mt-2">0%</p>
+            </div>
+        </div>
+
+        <div class="bg-slate-800/40 rounded-2xl border border-slate-800 p-8 text-center text-slate-400">
+            <p>أدخل طلباتك الأولى لتوليد تقرير تسريب الأرباح الذكي.</p>
+            <a href="orders.html" class="inline-block mt-4 px-6 py-2.5 bg-emerald-600 text-white font-bold rounded-xl text-sm">إضافة طلب جديد</a>
+        </div>
+    </main>
+
+    <script>
+        function logout() {
+            localStorage.removeItem('rabeh_token');
+            window.location.href = 'login.html';
+        }
+    </script>
+</body>
+</html>
