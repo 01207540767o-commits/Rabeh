@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>رَابِح (Rabeh) — كاشف تسريب الأرباح للمتاجر الإلكترونية</title>
+    <!-- Tailwind CSS عبر CDN مع دعم RTL -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Tajawal', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen flex flex-col justify-between">
+
+    <!-- الهيدر والقائمة الرئيسية -->
+    <header class="border-b border-slate-800 bg-slate-900/80 backdrop-blur sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-emerald-600 rounded-xl flex items-center justify-center font-bold text-xl shadow-lg shadow-emerald-600/30">📈</div>
+                <span class="text-2xl font-extrabold tracking-tight text-white">رَابِـح <span class="text-emerald-500">Rabeh</span></span>
+            </div>
+            
+            <nav class="hidden md:flex items-center gap-8 text-slate-300 font-medium">
+                <a href="#features" class="hover:text-emerald-400 transition-colors">المميزات</a>
+                <a href="#how-it-works" class="hover:text-emerald-400 transition-colors">كيف تعمل</a>
+                <a href="#pricing" class="hover:text-emerald-400 transition-colors">الأسعار</a>
+                <a href="#faq" class="hover:text-emerald-400 transition-colors">الأسئلة الشائعة</a>
+            </nav>
+
+            <div class="flex items-center gap-4">
+                <a href="login.html" class="px-5 py-2.5 rounded-xl border border-slate-700 hover:bg-slate-800 transition-all font-semibold text-sm">تسجيل الدخول</a>
+                <a href="register.html" class="px-5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 transition-all font-semibold text-sm shadow-lg shadow-emerald-600/30">تجربة مجانية</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- قسم Hero الرئيسي -->
+    <section class="relative py-20 lg:py-28 overflow-hidden">
+        <div class="max-w-5xl mx-auto px-6 text-center relative z-10">
+            <span class="px-4 py-1.5 rounded-full bg-red-500/10 border border-red-500/20 text-red-400 text-sm font-semibold inline-block mb-6">
+                🚨 المبيعات العالية لا تعني دائماً أرباحاً ممتازة!
+            </span>
+            <h1 class="text-4xl lg:text-6xl font-extrabold text-white leading-tight mb-8">
+                اعرف أين تتسرب أرباح متجرك <br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-300 to-amber-300">واكشف التكاليف الخفية بدقة مع رَابِح</span>
+            </h1>
+            <p class="text-lg lg:text-xl text-slate-400 max-w-3xl mx-auto mb-10 leading-relaxed">
+                أداة ويب عربية متكاملة للبائعين عبر فيسبوك، انستغرام، وواتساب والمتاجر الإلكترونية. تحسب لك صافي الربح الحقيقي بعد خصم تكلفة المنتج، الشحن، الإعلانات، المرتجعات، وعمولات المنصات.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="register.html" class="w-full sm:w-auto px-8 py-4 bg-emerald-600 hover:bg-emerald-700 rounded-xl font-bold text-lg shadow-xl shadow-emerald-600/30 transition-all">ابدأ التجربة المجانية الآن</a>
+                <a href="login.html" class="w-full sm:w-auto px-8 py-4 border border-slate-700 hover:bg-slate-800 rounded-xl font-bold text-lg transition-all">إدخال كود التفعيل</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- بطاقة معاينة التقرير الذكي -->
+    <section class="max-w-6xl mx-auto px-6 mb-24">
+        <div class="bg-slate-800/60 border border-slate-700/60 rounded-3xl p-8 shadow-2xl backdrop-blur">
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-6 pb-6 border-b border-slate-700/50 mb-6">
+                <div>
+                    <h3 class="text-xl font-bold text-white">لوحة تحليلات تسريب الأرباح Live Demo</h3>
+                    <p class="text-sm text-slate-400">مثال لما تكتشفه الأداة فور إدخال بيانات الطلبات</p>
+                </div>
+                <span class="bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-xs px-3 py-1 rounded-full font-semibold">تحديث مباشر</span>
+            </div>
+
+            <!-- الكروت الإحصائية -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+                <div class="bg-slate-900/80 p-5 rounded-2xl border border-slate-800">
+                    <p class="text-xs text-slate-400 font-medium">إجمالي المبيعات</p>
+                    <p class="text-2xl font-bold text-white mt-2">12,450 <span class="text-xs text-slate-400">ر.س</span></p>
+                </div>
+                <div class="bg-slate-900/80 p-5 rounded-2xl border border-slate-800">
+                    <p class="text-xs text-slate-400 font-medium">إجمالي التكاليف والإعلانات</p>
+                    <p class="text-2xl font-bold text-amber-400 mt-2">8,910 <span class="text-xs text-slate-400">ر.س</span></p>
+                </div>
+                <div class="bg-slate-900/80 p-5 rounded-2xl border border-slate-800">
+                    <p class="text-xs text-slate-400 font-medium">صافي الربح الحقيقي</p>
+                    <p class="text-2xl font-bold text-emerald-400 mt-2">3,540 <span class="text-xs text-slate-400">ر.س</span></p>
+                </div>
+                <div class="bg-slate-900/80 p-5 rounded-2xl border border-slate-800">
+                    <p class="text-xs text-slate-400 font-medium">نسبة المرتجعات</p>
+                    <p class="text-2xl font-bold text-red-400 mt-2">18.5%</p>
+                </div>
+            </div>
+
+            <!-- التنبيهات الذكية -->
+            <div class="space-y-3">
+                <div class="p-4 bg-red-950/40 border border-red-800/50 rounded-xl flex items-start gap-3">
+                    <span class="text-xl">⚠️</span>
+                    <div>
+                        <h4 class="font-bold text-red-300 text-sm">تنبيه تسريب أرباح: الإعلانات تستهلك نسبة مرتفعة جداً!</h4>
+                        <p class="text-xs text-red-200/70 mt-1">تكلفة الإعلانات للمنتج "ساعة ذكية" بلغت 42% من هامش الربح الإجمالي.</p>
+                    </div>
+                </div>
+                <div class="p-4 bg-amber-950/40 border border-amber-800/50 rounded-xl flex items-start gap-3">
+                    <span class="text-xl">📦</span>
+                    <div>
+                        <h4 class="font-bold text-amber-300 text-sm">ارتفاع نسبة المرتجعات للمنتج X</h4>
+                        <p class="text-xs text-amber-200/70 mt-1">تسببت الشحنات المرتجعة في خسارة 420 ر.س مصاريف شحن غير مستردة.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- مميزات الأداة -->
+    <section id="features" class="py-20 border-t border-slate-800 bg-slate-900/50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-extrabold text-white mb-4">لماذا يحتاج متجرك إلى منصة رَابِـح؟</h2>
+                <p class="text-slate-400">معظم التجار يقعون في فخ "المبيعات العالية" بينما تأكل التكاليف الجانبية الأرباح في الخفاء.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-8 bg-slate-800/40 rounded-2xl border border-slate-800">
+                    <div class="w-12 h-12 bg-emerald-600/20 text-emerald-400 rounded-xl flex items-center justify-center text-2xl mb-6">📊</div>
+                    <h3 class="text-xl font-bold text-white mb-3">حساب التكلفة الحقيقية</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">تجميع تكاليف الشحن، الإعلانات، عمولة المنصات، وتكلفة المنتج لحساب ربح كل طلب بدقة متناهية.</p>
+                </div>
+                <div class="p-8 bg-slate-800/40 rounded-2xl border border-slate-800">
+                    <div class="w-12 h-12 bg-amber-600/20 text-amber-400 rounded-xl flex items-center justify-center text-2xl mb-6">🔍</div>
+                    <h3 class="text-xl font-bold text-white mb-3">كاشف تسريب الأرباح</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">خوارزمية ذكية تنبهك فوراً إذا كان هناك منتج مرتفع المرتجعات أو إعلان غير مربح يلتهم صافي دخل المتجر.</p>
+                </div>
+                <div class="p-8 bg-slate-800/40 rounded-2xl border border-slate-800">
+                    <div class="w-12 h-12 bg-blue-600/20 text-blue-400 rounded-xl flex items-center justify-center text-2xl mb-6">🔑</div>
+                    <h3 class="text-xl font-bold text-white mb-3">تفعيل آمن وسهل</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">نظام أكواد تفعيل صارم وآمن يضمن حماية بياناتك والتحقق من اشتراكك مباشرة من الخادم Server-Side.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- خطط الأسعار -->
+    <section id="pricing" class="py-20 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-extrabold text-white mb-4">خطط الاشتراك والتفعيل</h2>
+                <p class="text-slate-400">احصل على كود التفعيل الخاص بك وابدأ في حماية أرباحك فوراً</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- النسخة التجريبية -->
+                <div class="p-8 bg-slate-800/40 rounded-3xl border border-slate-700 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-white mb-2">التجربة المجانية</h3>
+                        <p class="text-slate-400 text-sm mb-6">لتجربة الأداة واكتشاف خصائصها</p>
+                        <div class="text-3xl font-black text-white mb-6">مجاناً</div>
+                        <ul class="space-y-3 text-sm text-slate-300 mb-8">
+                            <li class="flex items-center gap-2">✓ إدخال حتى 10 طلبات</li>
+                            <li class="flex items-center gap-2">✓ تقارير تحليلية مبسطة</li>
+                            <li class="flex items-center gap-2">✓ حساب المبيعات والتكاليف</li>
+                        </ul>
+                    </div>
+                    <a href="register.html" class="w-full py-3 text-center border border-slate-600 hover:bg-slate-700 rounded-xl font-bold transition-all">تجربة الآن</a>
+                </div>
+
+                <!-- النسخة الاحترافية -->
+                <div class="p-8 bg-gradient-to-b from-slate-800 to-slate-900 rounded-3xl border-2 border-emerald-500 relative flex flex-col justify-between shadow-2xl shadow-emerald-950/50">
+                    <span class="absolute -top-3 right-8 bg-emerald-600 text-white text-xs px-3 py-1 rounded-full font-bold">الأكثر طلباً</span>
+                    <div>
+                        <h3 class="text-xl font-bold text-white mb-2">الرخصة الكاملة (Activation Code)</h3>
+                        <p class="text-slate-400 text-sm mb-6">لإدارة كافة طلبات متجرك وتحديد التكاليف بلا حدود</p>
+                        <div class="text-3xl font-black text-white mb-6">حسب كود التفعيل</div>
+                        <ul class="space-y-3 text-sm text-slate-300 mb-8">
+                            <li class="flex items-center gap-2">✓ طلبات غير محدودة</li>
+                            <li class="flex items-center gap-2">✓ كاشف تسريب الأرباح الذكي</li>
+                            <li class="flex items-center gap-2">✓ تنبيهات المرتجعات والإعلانات</li>
+                            <li class="flex items-center gap-2">✓ إمكانية إضافة جميع المنتجات</li>
+                        </ul>
+                    </div>
+                    <a href="activate.html" class="w-full py-3 text-center bg-emerald-600 hover:bg-emerald-700 rounded-xl font-bold transition-all">تفعيل الحساب بالكود</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer class="border-t border-slate-800 py-8 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-6 text-center text-slate-500 text-sm">
+            <p>© 2026 Rabeh (رَابِـح) — جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const token = localStorage.getItem('rabeh_token');
+            if (token) {
+                const authButtons = document.querySelectorAll('a[href="login.html"]');
+                authButtons.forEach(btn => {
+                    btn.textContent = 'لوحة التحكم';
+                    btn.href = 'dashboard.html';
+                });
+            }
+        });
+    </script>
+</body>
+</html>
